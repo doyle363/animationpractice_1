@@ -1,0 +1,75 @@
+ /* this is where all of your CSS styles go */
+
+@font-face {
+	font-family: 'univers';
+	src: url(../fonts/universlt53extended.ttf);
+}
+body {
+	background-color: #006600;
+}
+
+#container {
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+.mono {
+	color: black;
+	font-family: 'univers';
+	font-size: 7em;
+	display: inline;
+	float: left;
+	letter-spacing: 29px;
+}
+
+@-webkit-keyframes e_stretch {
+	0%,100% { transform:scale(1,1);  -webkit-transform:scale(1,1); left:0px; }
+	20% { transform:scale(7,1);  -webkit-transform:scale(7,1); left:70px; }
+	70% { transform:scale(.7,1);  -webkit-transform:scale(.7,1); left:460px; }
+}
+#e {
+	position: relative;
+	animation-delay: 3s;
+	-webkit-animation: e_stretch 10s cubic-bezier(.25,.26,.53,.94) infinite;
+}
+
+@-webkit-keyframes v_narrow {
+	0%,100% { transform:scale(1,1);  -webkit-transform:scale(1,1); left:0px; }
+	20% { transform:scale(.2,1);  -webkit-transform:scale(.2,1); left:90px; }
+	70% { transform:scale(1.5,1);  -webkit-transform:scale(1.5,1); left:-300px; }
+}
+#v {
+	position: relative;
+	animation-delay: 3s;
+	-webkit-animation: v_narrow 10s cubic-bezier(.25,.26,.53,.94) infinite;
+}
+
+@-webkit-keyframes i_narrow {
+	0%,100% { transform:scale(1,1);  -webkit-transform:scale(1,1); left: 0px; }
+	20% { transform:scale(.4,1);  -webkit-transform:scale(.4,1); left: 30px;  }
+	70% { transform:scale(1.5,1);  -webkit-transform:scale(1.5,1); left: -290px;  }
+}
+#i {
+	position: relative;
+	animation-delay: 3s;
+	-webkit-animation: i_narrow 10s cubic-bezier(.25,.26,.53,.94) infinite;
+}
+
+@-webkit-keyframes l_stretch {
+	0%,100% { transform:scale(1,1);  -webkit-transform:scale(1,1); left:0px;  }
+	20% { transform:scale( 2,1);  -webkit-transform:scale(2,1); left:40px;  }
+	70% { transform:scale( 8,1);  -webkit-transform:scale(8,1); left:-50px;  }
+}
+#l {
+	position: relative;
+	animation-delay: 3s;
+	-webkit-animation: l_stretch 10s cubic-bezier(.25,.26,.53,.94) infinite;
+}
+
+
+
+
